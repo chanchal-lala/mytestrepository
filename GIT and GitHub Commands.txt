@@ -1,0 +1,56 @@
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   index2.html
+
+
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$ git commit - m "files added sucessfully"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'files added sucessfully' did not match any file(s) known to git
+
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$ git commit - m"files added sucessfully"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'mfiles added sucessfully' did not match any file(s) known to git
+
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$ git commit -m "added index.html | added index2.html"
+[master f2650d9] added index.html | added index2.html
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index2.html
+
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$  git remote add origin https://github.com/ckl123/mytestrepository.git
+
+Chanchal Lala@LocalHost MINGW64 ~/Desktop/Tools/sourcecode (master)
+$ git push -u origin master
+
+
+For error:
+! [rejected] master -> master (fetch first)
+error: failed to push some refs to ''
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+use:
+
+Try this git command
+
+git push origin master --force
+or short of force -f
+
+git push origin master -f
