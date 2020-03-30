@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Main Test Suite]">
+  <parameter name="OS" value="Windows"/>
+  <parameter name="browser" value="Chrome"/>
+  <test name="Extent Report Test(failed)">
+    <classes>
+      <class name="extentreport.BasicExtentReport">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+          <include name="testCase5"/>
+          <include name="getResult"/>
+          <include name="testCase4"/>
+        </methods>
+      </class> <!-- extentreport.BasicExtentReport -->
+      <class name="example.NewTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- example.NewTest -->
+    </classes>
+  </test> <!-- Extent Report Test(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->
